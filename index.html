@@ -1,32 +1,69 @@
-<div class="hero">
+<div class="stars"></div>
 
-    <div class="envelope" onclick="openLetter()">
+<section class="hero">
 
-        <div class="flap"></div>
+<div class="envelope" onclick="openLetter()">
+<div class="flap"></div>
+<div class="front"></div>
 
-        <div class="body"></div>
-
-        <div class="text">
-            For You
-            <span>Click to open</span>
-        </div>
-
-    </div>
-
+<div class="label">
+<h2>For You</h2>
+<p>Click to open</p>
+</div>
 </div>
 
-<div id="letter">
+</section>
+
+<section id="letter">
+
+<div class="glass">
 
 <h1>Happy Birthday.</h1>
 
 <p>
-Write your birthday message here...
+Write your message here...
 </p>
 
-<div class="scroll">
-
+<div class="down">
 ↓ Scroll down
-
 </div>
 
 </div>
+
+</section>
+
+<section class="playlist">
+
+<h2>Songs that remind me of you</h2>
+
+<iframe style="border-radius:12px"
+src="YOUR SPOTIFY EMBED LINK"
+width="100%"
+height="80"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<iframe style="border-radius:12px"
+src="YOUR SECOND LINK"
+width="100%"
+height="80"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<script>
+function openLetter(){
+
+document.querySelector(".flap").style.transform="rotateX(180deg)";
+
+document.getElementById("letter").style.display="flex";
+
+document.getElementById("letter").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+</script>
