@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#04060f;
+overflow-x:hidden;
+font-family:'Cormorant Garamond',serif;
+color:white;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(#d9d9ff 1px, transparent 1px);
+
+background-size:120px 120px,180px 180px,250px 250px;
+animation:move 120s linear infinite;
+opacity:.7;
+}
+
+@keyframes move{
+from{transform:translateY(0);}
+to{transform:translateY(-600px);}
+}
+
+.container{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+.letter{
+width:900px;
+max-width:95%;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+padding:60px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 0 40px rgba(255,255,255,.08);
+animation:fade 2.5s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:72px;
+text-align:center;
+margin-bottom:30px;
+font-weight:400;
+}
+
+p{
+font-size:28px;
+line-height:1.9;
+font-weight:300;
+margin-bottom:22px;
+color:#f4f4f4;
+}
+
+.divider{
+height:1px;
+background:rgba(255,255,255,.15);
+margin:50px 0;
+}
+
+.playlist{
+text-align:center;
+}
+
+.playlist h2{
+font-size:40px;
+margin-bottom:25px;
+font-weight:400;
+}
+
+.spotify{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+footer{
+margin-top:70px;
+text-align:center;
+font-style:italic;
+opacity:.75;
+font-size:22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<div class="letter">
+
+<h1>Happy Birthday.</h1>
+
+<p>
+I don't know if you'll ever know who made this.
+Maybe that's how it's supposed to be.
+</p>
+
+<p>
+I just couldn't let another birthday pass without wishing you one.
+Even if I'm no longer part of your life,
+I still hope today is filled with people who make you smile.
+</p>
+
+<p>
+I hope this year brings you peace,
+the kind that stays.
+I hope you accomplish everything you've been working toward,
+and I hope life is gentle with you.
+</p>
+
+<p>
+This page isn't meant to change anything.
+It isn't asking for anything.
+It's simply a birthday wish from someone
+who genuinely hopes you're okay.
+</p>
+
+<div class="divider"></div>
+
+<div class="playlist">
+
+<h2>Songs that always reminded me of you</h2>
+
+<div class="spotify">
+
+<!-- Replace the links below with your own Spotify embeds -->
+
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/11dFghVXANMlKmJXsNCbNl"
+width="100%"
+height="80"
+frameborder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/4iV5W9uYEdYUVa79Axb7Rh"
+width="100%"
+height="80"
+frameborder="0">
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+Take care of yourself.<br>
+Happy Birthday.
+
+</footer>
+
+</div>
+
+</div>
+
+</body>
+</html>
